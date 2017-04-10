@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HwResponsive</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="navigation">
+               <span class="description">Navigation</span>
+               <span class="burger">
+               	<span></span>
+               </span>
+            </div>
+     	    <nav>
+     		   <li><a href="">psd websites</a></li>
+     		   <li><a href="">ui kits</a> </li>
+     		   <li><a href="">premium psd files</a> </li> 
+     		   <li><a href="">about</a> </li>  
+     		   <li><a href="">blog</a> </li>  
+     	    </nav>
+     	    <div class="about-us"> <h1>Awesome Free PSD <br> templates & Resources</h1> <span>www.BlazRobar.com</span> <a href=""> &#8250; </a></div>
+     	</header>
+     	<main>
+     		<form>
+             <label for="text">
+                    <input type="submit" value="&#8250;">
+               </label>
+     		   <div class="input">
+                    <input id="text" type="text" name="text" placeholder="I'm like the Robin Hood of PSD files.">
+                </div>
+              		
+     		</form>
+     		<div id="slider-wrapper">
+				<div class="slider">
+					<div>
+						<div class="slide-img">
+							<img src="images/img1.jpg">
+							<img src="images/img2.jpg">
+							<img src="images/img3.jpg">
+						</div>
+				    </div>
+				</div>
+			</div>
+			<article>
+				<h2><a href="">BlazRobar.com</a></h2>
+				<div class="columns">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p> 
+                <p>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula ipsum non leo tristique eget facilisis lacus commodo. Curabitur vitae justo lorem, non ornare nibh. Pellentesque pretium, tellus ac ultrices faucibus, nibh mauris dapibus lorem, vitae viverra nisl elit sit amet libero. Nam eu blandit risus.</p> 
+                <p>Phasellus imperdiet mattis nulla. Integer gravida imperdiet congue. Proin vitae pretium augue. Donec est sem, mattis et blandit ac, blandit at arcu. Donec tempus tincidunt suscipit. Suspendisse eu vulputate lacus.</p>
+			</article>
+     	</main>
+    </div>
+    		<script type="text/javascript">
+			jQuery(document).ready(function(){
+				jQuery('.burger').click(function(){
+					if(jQuery('header nav').hasClass('open')) {
+						jQuery('header nav').removeClass('open');
+					} else {
+						jQuery('header nav').addClass('open');
+					}
+				});
+			});
+		</script>
+</body>
+</html>

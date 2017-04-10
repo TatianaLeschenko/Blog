@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
+* {
+  box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-size: 14px;
+	color: #515151;
+}
+#wrapper {
+	max-width: 1024px;
+	width: 100%;
+	margin: 0 auto;
+	background: #ebebeb;
+}
+header {
+	background: linear-gradient(119deg,#19b4c6,#078aa4);
+	min-height: 677px;
+}
+.navigation {
+	display: none;
+}
+nav {
+	list-style-type: none;
+	background: #373c3f;
+	padding: 40px 53px;
+	width: 100%;
+}
+nav li{
+	display: inline-block;
+	padding-right: 22px;
+}
+nav li:last-child {
+	padding-right: 0;
+}
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+header .about-us {
+	color: #fff;
+	margin-left: 7.8%;
+	margin-top: 186px;
+}
+.about-us h1 {
+	font-size: 60px;
+	font-weight: normal;
+	margin: 0 0 48px;
+	text-shadow: 0px 0px 2px #0097b0;
+}
+header .about-us h1 + span {
+	font-size: 34px;
+	opacity: 0.5;
+	text-shadow: 0px 0px 2px #0097b0;
+}
+header .about-us a {
+	font-size: 36px;
+	padding-left: 28%;
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 0px 0px 2px #00819c;
+} 
+
+header .about-us a,
+[type="submit"] {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+}
+
+[type="text"], [type="submit"] {
+	outline: none;
+	min-height: 248px;
+}
+[type="text"] {
+	width: 100%;
+    font-size: 30px;
+    color: #9282a0;
+    padding: 0 8%;
+    background: #27212c;
+    border: 1px solid #262a35;
+    border-left-color: #35303a;
+    border-bottom-color: #2b2134;
+    border-right-color: #992d6e;
+    text-shadow: 0px 0px 2px #25202a;
+}
+input::-webkit-input-placeholder {
+	color: #9282a0;
+}
+div.input  {
+    margin-right: 290px;
+}
+label[for="text"] {
+    float: right;
+}
+
+[type="submit"] {
+	width: 290px;
+	background: #bc3183;
+    font-size: 50px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #b13786;
+    border-left-color: #c63289;
+    border-right-color: #bf3d8a;
+    text-shadow: 0px 0px 2px #b9297e;
+} 
+#slider-wrapper{
+	margin-bottom: 48px;
+	width: 100%;
+    float: left;
+} 
+.slide-img img {
+	width: 33.3%;
+    float: left;
+}
+article {
+	width: 85%;
+	margin: 0 auto;
+	padding-bottom: 120px;
+}
+article h2 {
+	font-weight: normal;
+}
+
+article h2 a {
+  font-size: 30px;
+   color: #088ca5;
+   text-decoration: none;
+}
+article .columns {
+	column-count: 2;
+    column-gap: 4em;
+}
+
+p {
+	line-height: 26px;
+	margin: 32px 0;
+}
+p:first-of-type {
+	margin-top: 0;
+}
+
+@media  (min-width: 980px) and (max-width: 1023px) {
+	header {
+		min-height: 647px;
+	}
+    header .about-us {
+        margin-top: 170px;
+    }
+    .about-us h1 {
+       margin: 0 0 34px;
+    }
+    [type="text"], [type="submit"]{
+        min-height: 234px;
+    }
+    article {
+        padding-bottom: 72px;
+    }
+}
+@media  (max-width: 979px) {
+	 body {
+    	font-size: 22px;
+    }
+    header {
+       min-height: 422px;
+    }
+    header .about-us {
+        margin-top: 105px;
+    }
+    .about-us h1 {
+       margin: 0 0 25px;
+    }
+    header nav {
+    	display: none;
+    	position: absolute;
+        z-index: 1;
+        padding: 0;
+    }
+
+	header nav li {
+		width: 100%;
+		border-bottom: 1px solid #e6e6e6;
+		background: rgba(255,255,255,0.5);
+    }
+    header nav li a {
+		display: block;
+		font-size: 17px;
+        padding: 5px;
+        color: #515151;
+	}
+    header nav li a:hover {
+        color: #078aa4;
+    }
+	
+    header nav.open {
+		display: block;
+	}	
+    .navigation,
+    .burger {
+    	display: block;
+    	background: #373c3f;
+    	min-height: 74px;
+    }
+    .navigation .description {
+        padding: 23px 0 0 34px;
+        float: left;
+        color: #ebebeb;
+    	font-size: 24px;
+    }
+    .burger {
+    	float: right;
+    	padding: 25px;
+    	background: #202529;
+    	cursor: pointer; 
+    }
+    .burger span {
+    	display: block;
+    	width: 30px;
+    	height: 5px;
+    	background: #fff;
+    }
+    .burger span:before,
+    .burger span:after {
+    	display: block;
+    	content: "";
+        border-bottom: 5px solid #fff;
+    	padding-top: 9px;
+    }
+    .burger span:after {
+        padding-top: 4px;
+    }
+    .about-us h1 {
+    	font-size:37px;
+    }
+    header .about-us h1 + span,
+    article h2 a {
+    	font-size: 23px;
+    }
+    header .about-us a {
+    	font-size: 25px;
+    }
+    [type="text"], [type="submit"] {
+       min-height: 150px;
+       font-size: 20px;
+    }
+    [type="submit"] {
+        max-width: 150px;
+    	font-size: 34px;
+    }
+    div.input  {
+        margin-right: 150px;
+    }
+
+    .slide-img img {
+        width: 100%;
+    }
+    article {
+        padding-bottom: 43px;
+    }
+    article .columns {
+    	column-count: 1;
+    }
+    p {
+	  line-height: 44px;
+      margin: 58px 0;
+    }
+}
+@media (max-width: 639px) {
+    body {
+        font-size: 13.5px;
+    }
+    header {
+        min-height: 212px;
+    }
+    header nav li a {
+        font-size: 13px;
+    }
+    header .about-us {
+        margin-top: 54px;
+    }
+    .about-us h1 {
+       margin: 0 0 13px;
+    }
+    .navigation,
+    .burger {
+        min-height: 37px;
+    }
+    .navigation .description {
+        font-size: 13px;
+        padding: 10px 0 0 18px;
+    }
+    .burger {
+        padding: 12px;
+    }
+    .burger span {
+        width: 17px;
+        height: 2px;
+    }
+    .burger span:before, 
+    .burger span:after  {
+        border-bottom-width: 2px;
+        padding-top: 4px;
+    } 
+    .burger span:after {
+        padding-top: 2px;
+    }
+    .about-us h1 {
+        font-size: 20px;
+    }
+    header .about-us h1 + span {
+        font-size: 12px;
+    }
+    header .about-us a {
+        font-size: 13px;
+    }
+    [type="text"], [type="submit"] {
+       min-height: 75px;
+       font-size: 11px;
+    }
+    [type="submit"] {
+        max-width: 75px;
+        font-size: 16px;
+    }
+    div.input  {
+        margin-right: 75px;
+    }
+
+    article {
+        padding-bottom: 21px;
+    }
+    article h2 a {
+        font-size: 18px;
+    }
+    p {
+      line-height: 22px;
+       margin: 24px 0;
+    }
+}
